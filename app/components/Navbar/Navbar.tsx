@@ -58,7 +58,7 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <img
+                                {/* <img
                                     className="block h-12 w-40 lg:hidden"
                                     src={'/assets/logo/logo.svg'}
                                     alt="dsign-logo"
@@ -67,7 +67,10 @@ const Navbar = () => {
                                     className="hidden h-full w-full lg:block"
                                     src={'/assets/logo/logo.svg'}
                                     alt="dsign-logo"
-                                />
+                                /> */}
+                                <div className='text-3xl font-bold text-Blueviolet'>
+                                    Googolgen
+                                </div>
                             </div>
 
                             {/* LINKS */}
