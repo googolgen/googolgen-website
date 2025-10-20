@@ -10,29 +10,20 @@ interface Data {
 
 const data: Data[] = [
     {
-        imgSrc: "/assets/carousel/airbnb.svg"
+        imgSrc: "/assets/carousel/jnystd_logo.png"
     },
     {
-        imgSrc: "/assets/carousel/fedex.svg"
+        imgSrc: "/assets/carousel/iso.png"
     },
     {
-        imgSrc: "/assets/carousel/google.svg"
+        imgSrc: "/assets/carousel/ncbsd.png"
     },
     {
-        imgSrc: "/assets/carousel/hubspot.svg"
+        imgSrc: "/assets/carousel/mca.png"
     },
     {
-        imgSrc: "/assets/carousel/microsoft.svg"
+        imgSrc: "/assets/carousel/wb.png"
     },
-    {
-        imgSrc: "/assets/carousel/walmart.svg"
-    },
-    {
-        imgSrc: "/assets/carousel/airbnb.svg"
-    },
-    {
-        imgSrc: "/assets/carousel/fedex.svg"
-    }
 ]
 
 
@@ -84,7 +75,7 @@ export default class MultipleItems extends Component {
 
             <div className='text-center my-20'>
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                    <h2 className="text-midnightblue text-2xl font-semibold">Trusted by companies of all sizes</h2>
+                    <h2 className="text-midnightblue text-2xl font-semibold">Our Partners & Affiliations</h2>
                     <div className="py-14">
                         <Slider {...settings}>
                             {data.map((item, i) =>

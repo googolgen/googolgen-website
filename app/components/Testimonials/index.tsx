@@ -15,46 +15,26 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/testimonial/user.svg',
+        name: "Anindita Roy",
+        profession: 'Student',
+        comment: 'C language always felt like my weak area since I only had a very basic understanding. After joining this course, I’ve improved a lot! Teacher explains everything clearly, from basics to advanced, and the practice assignments after every class make it easier to learn. Now I actually enjoy learning C and feel much more confident.',
+        imgSrc: '/assets/icons/user-f.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user2.png',
+        name: "Shreya Sardar",
+        profession: 'Student',
+        comment: 'The C programming course was very helpful for learning the basics of coding. The teacher was really nice and explained every topic clearly, which made it easier to understand things like loops, arrays, and functions. Sir also gave us some small projects and basic games to make learning more interesting. Some parts, like pointers, were a bit tricky at first, but the teacher’s way of teaching made them easier to follow. Overall, this course gave me good knowledge and confidence to learn more programming languages.',
+        imgSrc: '/assets/icons/user-f.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user3.png',
-    },
-    {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user1.png',
-    },
-    {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user2.png',
-    },
-    {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/assets/mentor/user3.png',
+        name: "Nitin Pradhan",
+        profession: 'Parent',
+        comment: "I'm so impressed with InspireIQ Lab. They have completely changed my son's perspective on learning—he now sees it as an adventure. The hands-on approach to STEM and robotics is exactly what he needed to spark his interest. The focus on critical thinking and collaboration over rote learning is a breath of fresh air. Highly recommended for any parent who wants to nurture their child's inner innovator.",
+        imgSrc: '/assets/icons/user.png',
     },
 ]
 
 // CAROUSEL SETTINGS
-
-
 export default class MultipleItems extends Component {
 
     render() {
@@ -103,15 +83,18 @@ export default class MultipleItems extends Component {
 
         return (
             <div className="pt-40 pb-10 sm:pb-32 lg:py-32" id="testimonial">
+                <h3 className="mx-40 text-midnightblue text-4xl lg:text-55xl font-semibold mb-5">
+                    Testimonials
+                </h3>
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8'>
                     <Slider {...settings}>
                         {postData.map((items, i) => (
                             <div key={i}>
                                 <div className={`bg-white m-4 p-5 my-20 relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
-                                    <div className="absolute top-[-45px]">
-                                        <Image src={items.imgSrc} alt={items.imgSrc} width={100} height={100} className="inline-block" />
+                                    <div className="absolute w-20 h-20 rounded-full overflow-clip ring-4 top-[-45px]">
+                                        <Image src={items.imgSrc} alt={items.imgSrc} width={80} height={80} className="inline-block w-full object-contain" />
                                     </div>
-                                    <h4 className='text-base font-normal text-darkgray my-4'>{items.comment}</h4>
+                                    <h4 className='text-base font-normal text-darkgray my-8'>{items.comment}</h4>
                                     <hr style={{ color: "#D7D5D5" }} />
                                     <div className="flex justify-between">
                                         <div>
@@ -123,7 +106,7 @@ export default class MultipleItems extends Component {
                                             <StarIcon width={20} className="text-gold" />
                                             <StarIcon width={20} className="text-gold" />
                                             <StarIcon width={20} className="text-gold" />
-                                            <StarIcon width={20} className="text-lightgray" />
+                                            <StarIcon width={20} className="text-gold" />
                                         </div>
                                     </div>
                                 </div>

@@ -55,16 +55,25 @@ const footer = () => {
     return (
 
         <div className="mx-auto max-w-2xl sm:pt-24 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+            
             <div className="my-12 grid grid-cols-1 gap-y-10 sm:grid-cols-6 lg:grid-cols-12">
-
-                {/* COLUMN-1 */}
 
                 <div className='sm:col-span-6 lg:col-span-5'>
                     <div className="flex flex-shrink-0 items-center border-right">
-                        {/* <Image src="/assets/logo/logo.svg" alt="logo" width={214} height={66} /> */}
-                        <div className="text-3xl font-bold text-Blueviolet">Googolgen</div>
+                        <Image src="/assets/logo/logo.jpeg" alt="logo" width={96} height={96} />
+                        <div className='flex flex-col items-center gap-2 ml-6 md:ml-4'>
+                  {/* <Image
+                    id="hello"
+                    className="block w-32"
+                    src={'/assets/logo/logo-text.png'}
+                    alt="dsign-logo"
+                    width={128}
+                    height={0}
+                  /> */}
+                  <span className='text-3xl font-bold text-Blueviolet'>Googolgen</span>
+                </div>
                     </div>
-                    <h3 className='text-xs font-medium text-gunmetalgray lh-160 mt-5 mb-4 lg:mb-16'> Open an account in minutes, get full financial <br /> control for much longer.</h3>
+                    <h3 className='text-base font-medium text-gunmetalgray lh-160 mt-5 mb-4 lg:mb-16'> Start learning today, build digital skills that last a lifetime.</h3>
                     <div className='flex gap-4'>
 
                         {socialLinks.map((items, i) => (
@@ -77,9 +86,6 @@ const footer = () => {
 
                     </div>
                 </div>
-
-                {/* CLOUMN-2/3/4 */}
-
 
                 {products.map((product) => (
                     <div key={product.id} className="sm:col-span-2">
@@ -99,11 +105,11 @@ const footer = () => {
             {/* All Rights Reserved */}
 
             <div className='py-10 md:flex items-center justify-between border-t border-t-gray-blue'>
-                <h4 className='text-dark-red opacity-75 text-sm text-center md:text-start font-normal'>@2023.E-learnings.All rights reserved</h4>
+                <h4 className='text-dark-red opacity-75 text-sm text-center md:text-start font-normal'>Copyright &copy; 2025 Googolgen Education Foundation. All rights reserved.</h4>
                 <div className="flex gap-5 mt-5 md:mt-0 justify-center md:justify-start">
-                    <h4 className='text-dark-red opacity-75 text-sm font-normal'><Link href="/" target="_blank">Privacy policy</Link></h4>
+                    <h4 className='text-dark-red opacity-75 text-sm font-normal'>Email: <Link className="hover:text-black hover:underline" href="mailto:contactgoogolgen25@gmail.com" target="_blank">contactgoogolgen25@gmail.com</Link></h4>
                     <div className="h-5 bg-dark-red opacity-25 w-0.5"></div>
-                    <h4 className='text-dark-red opacity-75 text-sm font-normal'><Link href="/" target="_blank">Terms & conditions</Link></h4>
+                    <h4 className='text-dark-red opacity-75 text-sm font-normal'>WhatsApp: <Link className="hover:text-black hover:underline" href="https://wa.me/919242235970" target="_blank">+91-9242235970</Link></h4>
                 </div>
             </div>
         </div>

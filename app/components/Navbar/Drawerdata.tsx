@@ -9,17 +9,18 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Courses', href: '#courses', current: false },
-  { name: 'Mentor', href: '#mentor', current: false },
-  { name: 'Group', href: '#/', current: false },
-  { name: 'Testimonial', href: '#testimonial', current: false },
-]
+  { name: 'About Us', href: '/about-us', current: false },
+  { name: 'Programs', href: '/programs', current: false },
+  // { name: 'Why InspireIQ', href: '/why-inspireiq', current: false },
+  { name: 'Gallery', href: '/gallery', current: false },
+  { name: 'Contact Us', href: '/contact-us', current: false },
+];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-const Data = () => {
+const Data = ({handleLinkClick}:{handleLinkClick: (href:string)=> void;}) => {
   return (
     <div className="rounded-md max-w-sm w-full mx-auto">
       <div className="flex-1 space-y-4 py-1">
@@ -29,6 +30,7 @@ const Data = () => {
               <Link
                 key={item.name}
                 href={item.href}
+                onClick={() => handleLinkClick(item.href)}
                 className={classNames(
                   item.current ? 'text-black hover:opacity-100' : 'hover:text-black hover:opacity-100',
                   'py-1 text-lg font-normal opacity-75 block'
@@ -39,12 +41,16 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
-            <button className="bg-white w-full text-Blueviolet border border-semiblueviolet font-medium py-2 px-4 rounded">
-              Log In
-            </button>
-            <button className="bg-semiblueviolet w-full hover:bg-Blueviolet hover:text-white text-Blueviolet font-medium my-2 py-2 px-4 rounded">
-              Sign up
-            </button>
+          </div>
+        </div>
+        <div className="sm:block">
+          <div className="space-y-1 px-5 pt-2 pb-3">
+            <Link 
+              href="/assets/brochure_googolgen.pdf" 
+              target='_blank' 
+              className="block text-center text-base py-3 px-4 rounded-full text-white bg-Blueviolet">
+              Download Brochure
+            </Link>
           </div>
         </div>
       </div>

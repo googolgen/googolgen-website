@@ -53,16 +53,6 @@ const postData: DataType[] = [
         heading: 'We Launch Delia',
         heading2: 'Webflow this Week!',
         name: "Colt stelle",
-        imgSrc: '/assets/courses/courseone.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
         imgSrc: '/assets/courses/coursetwo.png',
         students: 150,
         classes: 12,
@@ -125,8 +115,8 @@ export default class MultipleItems extends Component {
                 <div className='mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 '>
 
                     <div className="sm:flex justify-between items-center">
-                        <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Popular courses.</h3>
-                        <Link href={'/'} className="text-Blueviolet text-lg font-medium space-links">Explore courses&nbsp;&gt;&nbsp;</Link>
+                        <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Our Courses.</h3>
+                        <Link href={'/'} className="text-Blueviolet text-lg font-medium space-links">Explore more&nbsp;&gt;&nbsp;</Link>
                     </div>
 
 
@@ -161,9 +151,9 @@ export default class MultipleItems extends Component {
                                                     <StarIcon className="h-5 w-5 text-gold" />
                                                 </div>
                                             </div>
-                                            <div>
-                                                <h3 className="text-3xl font-medium">${items.price}</h3>
-                                            </div>
+                                            {/* <div>
+                                                <h3 className="text-3xl font-medium">₹{items.price}</h3>
+                                            </div> */}
                                         </div>
 
                                         <hr style={{ color: "#C4C4C4" }} />
