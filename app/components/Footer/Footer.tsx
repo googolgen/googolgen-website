@@ -16,20 +16,14 @@ interface socialLinks {
 const socialLinks: socialLinks[] = [
     {
         imgSrc: '/assets/footer/facebook.svg',
-        link: 'www.facebook.com',
+        link: 'https://www.facebook.com/share/178FLEUERr',
         width: 10
     },
     {
-        imgSrc: '/assets/footer/insta.svg',
-        link: 'www.instagram.com',
+        imgSrc: '/assets/footer/youtube.svg',
+        link: 'https://www.youtube.com/@googolgen',
         width: 14
     },
-    {
-        imgSrc: '/assets/footer/twitter.svg',
-        link: 'www.twitter.com',
-        width: 14
-    },
-
 ]
 
 const products: ProductType[] = [
@@ -62,14 +56,6 @@ const footer = () => {
                     <div className="flex flex-shrink-0 items-center border-right">
                         <Image src="/assets/logo/logo.jpeg" alt="logo" width={96} height={96} />
                         <div className='flex flex-col items-center gap-2 ml-6 md:ml-4'>
-                  {/* <Image
-                    id="hello"
-                    className="block w-32"
-                    src={'/assets/logo/logo-text.png'}
-                    alt="dsign-logo"
-                    width={128}
-                    height={0}
-                  /> */}
                   <span className='text-3xl font-bold text-Blueviolet'>Googolgen</span>
                 </div>
                     </div>

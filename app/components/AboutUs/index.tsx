@@ -7,10 +7,10 @@ const index = () => {
       <div className='my-6 mx-auto max-w-7xl py-8 px-4 lg:px-8 '>
           <DownMotion>
           <div className="flex flex-col sm:flex mb-6">
-              <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5">About Googolgen.</h3>
+              <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-10">About Googolgen.</h3>
               <p className="text-justify text-gunmetalgray">
-                At Googolgen Education Foundation, we follow the vision of NEP 2020 by introducing science, technology, and innovation to young minds through <b>play-based, hands-on learning</b>. 
-                Our programs are designed by experts and inspired by global best practices—including <b>inputs from IIT and NIT professors</b>—making sure your child builds a strong foundation in <b>STEM</b>(Science Technology Engineering and Mathematics), <b>Robotics</b>, and <b>AI</b>(Artificial Intelligence).
+                At <b>Googolgen Education Foundation</b>, we aim to make every learner future-ready by blending traditional computer education with modern technologies. Following the vision of NEP 2020, we introduce students to the world of <b>coding, AI, and digital innovation</b> through engaging, practical, and hands-on learning experiences.<br/>
+              As a registered organization and franchise partner of <b>Jawaharlal Nehru Youth Computer & Technical Skill Development(JNYCTSD)</b> and the <b>National Certification Board of Skill Development(NCBSD)</b>, Googolgen ensures every student receives <b>recognized certification</b> and industry-relevant training. Our mission is to bring advanced computer education—including programming (C, C++, Java, Python), web and app development, AI, and game development—to every aspiring learner in our region.  
               </p>
           </div>
           </DownMotion>
@@ -18,18 +18,17 @@ const index = () => {
           
           <DownMotion>
             <div className="bg-[#32ed73] h-60 px-6 py-10 rounded-lg justify-self-start">
-
               <Image className="mx-auto mb-4" src="/assets/icons/light-bulb.png" alt="light bulb" width={40} height={40}/>
-              <h3 className="text-xl font-semibold mb-2">Play-Based Learning</h3>
-              <p>Kids explore STEM by tinkering, building, and experimenting hands-on.</p>
+              <h3 className="text-xl font-semibold mb-2">Practical Learning</h3>
+              <p>Students learn by doing—exploring coding, design, and development through interactive, real-world projects.</p>
             </div>
           </DownMotion>
 
           <DownMotion>
             <div className="bg-[#32ceed] h-60 px-6 py-10 rounded-lg justify-self-center">
               <Image className="mx-auto mb-4" src="/assets/icons/robot.png" alt="light bulb" width={40} height={40}/>
-              <h3 className="text-xl font-semibold mb-2">AI & Robotics</h3>
-              <p>From age 3 to 18, every child gets a taste of the future—today.</p>
+              <h3 className="text-xl font-semibold mb-2">Modern Technologies</h3>
+              <p>From AI and programming to web, app, and game development, we prepare students for the skills of tomorrow.</p>
             </div>
           </DownMotion>
 
@@ -37,13 +36,12 @@ const index = () => {
             <div className="bg-[#edea55] h-60 px-6 py-10 rounded-lg justify-self-end">
               <Image className="mx-auto mb-4" src="/assets/icons/training.png" alt="light bulb" width={40} height={40}/>
               <h3 className="text-xl font-semibold mb-2">Aligned with NEP 2020</h3>
-              <p>A learning system, not a course—designed around the new education vision.</p>
+              <p>We follow the new education vision of creativity, innovation, and digital empowerment—making learning future-ready.</p>
             </div>
           </DownMotion>
         </div>
       </div>
     </section>
-
   )
 }
 

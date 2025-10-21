@@ -1,16 +1,14 @@
 import Banner from './components/Banner/index';
 import AboutUs from './components/AboutUs';
 import CTA from './components/CTA';
-import Mentor from './components/Mentor';
-import DownMotion from './components/MotionWrapper/DownMotion';
+import Mentor from './components/Mentor';;
 import FAQSection from './components/FAQ';
 import Link from 'next/link';
-import ATLLabSection from './components/ATLLab';
 import Events from './components/Events';
-import OurVisionPage from './components/our-vision/page';
 import Testimonials from './components/Testimonials';
 import Companies from './components/Companies/Companies';
 import Courses from './components/Courses';
+import Certifications from './components/AboutUs/Certifications';
 
 export default function Home() {
   return (
@@ -18,10 +16,9 @@ export default function Home() {
       <Banner />
       <Companies />
       <AboutUs/>
+      <Certifications/>
       <Courses/>
       {/* <Events/> */}
-      {/* <OurVisionPage/> */}
-      {/* <ATLLabSection/> */}
       <Mentor/>
       <Testimonials/>
       <CTA/>
