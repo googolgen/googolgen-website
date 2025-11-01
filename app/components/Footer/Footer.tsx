@@ -36,7 +36,7 @@ const products: ProductType[] = [
     link: [
       { label: 'Home', url: '/' },
       { label: 'About Us', url: '/about-us' },
-      { label: 'Programs', url: '/programs' },
+      { label: 'Courses', url: '/courses' },
       { label: 'Gallery', url: '/gallery' },
       { label: 'Contact Us', url: '/contact-us' },
     ],
@@ -45,22 +45,22 @@ const products: ProductType[] = [
     id: 2,
     section: "Contact",
     link: [
-      { label: 'Help / FAQ', url: '/faq' },
-      { label: 'Press', url: '/press' },
-      { label: 'Affiliates', url: '/affiliates' },
-      { label: 'Partners', url: '/partners' },
-      { label: 'Careers', url: '/careers' },
+      { label: 'Help / FAQ', url: '/#faq' },
+      { label: 'Press', url: '#' },
+      { label: 'Affiliates', url: '#' },
+      { label: 'Partners', url: '#' },
+      { label: 'Careers', url: '#' },
     ]
   },
   {
     id: 3,
     section: "More",
     link: [
-      { label: 'Blog', url: '/blog' },
-      { label: 'Certificates', url: '/certificates' },
-      { label: 'Testimonials', url: '/testimonials' },
-      { label: 'How we work?', url: '/how-we-work' },
-      { label: 'Badges & Recognition', url: '/badges-recognition' },
+      { label: 'Blog', url: '/#' },
+      { label: 'Certificates', url: '/#' },
+      { label: 'Testimonials', url: '/#testimonial' },
+      { label: 'How we work?', url: '#' },
+      { label: 'Badges & Recognition', url: '#' },
     ]
   }
 ];

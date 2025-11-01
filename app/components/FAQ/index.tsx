@@ -48,7 +48,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-white py-16 px-4 md:px-12 lg:px-24">
+    <section id="faq" className="bg-white py-16 px-4 md:px-12 lg:px-24">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800">
           Frequently Asked Questions (FAQ)
