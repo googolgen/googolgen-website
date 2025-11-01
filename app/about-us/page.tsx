@@ -56,7 +56,7 @@ const AboutUsPage = () => {
           <div className="flex flex-col sm:flex mb-6">
             <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-10">Company Details</h3>
             <p className="text-justify text-gunmetalgray">
-              <b>GOOGOLGEN EDUCATION FOUNDATION</b> is a Private Limited Company, governed by the Companies Act as a company limited by shares. Classified as a Non-government company, it is registered under the Registrar of Companies <b>RoC-Kolkata</b>. According to the Ministry of Corporate Affairs (MCA), this company was incorporated on <b>17-04-2025</b> and last updated on <b>26-08-2025</b>. Its <b>Corporate Identification Number (CIN) is U88900WB2025NPL278537</b>, and it carries the registration number <b>278537</b>. Currently, its eFiling status is listed as “Active,” suggesting that the company is no longer operational as per MCA records.
+              <b>GOOGOLGEN EDUCATION FOUNDATION</b> is a Private Limited Company, governed by the Companies Act as a company limited by shares. Classified as a Non-government company, it is registered under the Registrar of Companies <b>RoC-Kolkata</b>. According to the Ministry of Corporate Affairs (MCA), this company was incorporated on <b>17-04-2025</b> and last updated on <b>26-08-2025</b>. Its <b>Corporate Identification Number (CIN) is U88900WB2025NPL278537</b>, and it carries the registration number <b>278537</b>.
             </p>
           </div>
         </DownMotion>

@@ -104,7 +104,7 @@ export const courseDetailsData: Course[] = [
     description: "For students with prior programming knowledge to master Object-Oriented principles.",
     imageUrl: "/assets/images/courses/oop-java.jpg", // REPLACE with your image
     targetGroup: "Students with prior programming knowledge (C/Python preferred)",
-    duration: "N/A (Module durations provided)",
+    duration: "6 months",
     certificate: "Internal Certificate (Googolgen Education Foundation)",
     goal: "To provide a deep understanding of Object-Oriented Programming principles using the Java language, from basic concepts to building GUI applications.",
     modules: [
@@ -123,7 +123,7 @@ export const courseDetailsData: Course[] = [
     description: "For students with basic computer knowledge to learn ML & Data Science from scratch.",
     imageUrl: "/assets/images/courses/python-ml-ds.jpg", // REPLACE with your image
     targetGroup: "Students who have basic computer knowledge (no need for prior Python experience)",
-    duration: "N/A (Module durations provided)",
+    duration: "6 months",
     certificate: "Internal Certificate (Googolgen Education Foundation)",
     goal: "To take students from zero programming knowledge to building basic Machine Learning models, focusing on Python, data analysis, and visualization.",
     modules: [

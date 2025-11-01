@@ -19,7 +19,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-const Data = ({handleLinkClick}:{handleLinkClick: (href:string)=> void;}) => {
+const Data = () => {
   return (
     <div className="rounded-md max-w-sm w-full mx-auto">
       <div className="flex-1 space-y-4 py-1">
@@ -29,7 +29,6 @@ const Data = ({handleLinkClick}:{handleLinkClick: (href:string)=> void;}) => {
               <Link
                 key={item.name}
                 href={item.href}
-                onClick={() => handleLinkClick(item.href)}
                 className={classNames(
                   item.current ? 'text-black hover:opacity-100' : 'hover:text-black hover:opacity-100',
                   'py-1 text-lg font-normal opacity-75 block'
