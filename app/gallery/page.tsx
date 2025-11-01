@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 // Import Swiper Core and required modules
-import {Pagination, Navigation, Autoplay} from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper Styles
@@ -27,58 +27,57 @@ const photosData = [
     src: [
       '/assets/gallery/gallery1.jpeg',
     ],
-    alt: 'Students building a robot',
-    title: 'Hands-On Robotics for Young Innovators',
-    description: 'Kids from Class 4–7 not only build robotic cars and models but also develop logical thinking, problem-solving skills, and teamwork—qualities every parent values for their child’s growth.'
+    alt: 'Students learning basic computer operations in the lab',
+    title: 'Learning by Doing',
+    description: 'Students at Googolgen gain hands-on experience with real computers, learning essential skills like typing, file management, and internet basics—building a strong foundation for the digital age.'
   },
   {
     id: 2,
     src: [
       '/assets/gallery/gallery2.jpeg',
     ],
-    alt: 'Children making crafts',
-    title: 'Small Hands, Big Ideas',
-    description: 'Kids in UKG to Class 2 enjoy building with magnetic toys while strengthening problem-solving, imagination, and spatial awareness.'
+    alt: 'Young learners exploring MS Paint and creative design tools',
+    title: 'Creativity in Action',
+    description: 'Kids from junior classes express their creativity using MS Paint and design tools, learning computer basics while having fun with colors, shapes, and imagination.'
   },
   {
     id: 3,
     src: [
       '/assets/heroslider/img1.jpeg',
     ],
-    alt: 'Student coding on a laptop for an AI project',
-    title: 'Coding',
-    description: 'Students get their first taste of AI. Here, they are using generative AI to ask questions. It\'s a great introduction to the concepts that power the future of technology.'
+    alt: 'Student coding a simple project in C language',
+    title: 'Coding the Future',
+    description: 'Students explore programming languages like C, C++, and Python through guided lessons and projects, developing logic, problem-solving, and computational thinking skills.'
   },
   {
     id: 4,
     src: [
-      // 'https://placehold.co/600x400/5A4B31/FFFFFF?text=3D+Pen',
       '/assets/heroslider/img2.jpeg',
     ],
-    alt: 'Students are learning to use 3d-pens',
-    title: '3D Pen Fun',
-    description: 'Students are learning to use 3D-pens to design as per their wish and boost their creativity'
+    alt: 'Instructor teaching students about web development concepts',
+    title: 'Building the Web',
+    description: 'Through HTML, CSS, and JavaScript classes, students learn how websites are made and even create their own responsive web pages under expert guidance.'
   },
   {
     id: 5,
     src: [
-      // 'https://placehold.co/600x400/51315A/FFFFFF?text=Circuit+Building',
-      '/assets/heroslider/img3.jpeg'
+      '/assets/heroslider/img3.jpeg',
     ],
-    alt: 'A Space for Every Child',
-    title: 'A Space for Every Child',
-    description: 'From curious preschoolers to aspiring young innovators, InspireIQ Lab brings children of all ages together to explore, create, and grow.'
+    alt: 'Students attending a digital literacy session',
+    title: 'Digital Empowerment for All',
+    description: 'Googolgen ensures every student—from beginners to advanced learners—gets the right mix of theoretical knowledge and practical skills to excel in today’s digital world.'
   },
   {
     id: 6,
     src: [
       '/assets/gallery/gallery3.jpeg',
     ],
-    alt: 'Exploring Science with Magnets',
-    title: 'Exploring Science with Magnets',
-    description: 'Children discover the magic of magnetism through fun hands-on experiments, building curiosity and a deeper understanding of physics.'
+    alt: 'Students exploring hardware components of a computer',
+    title: 'Inside the Machine',
+    description: 'Learners take apart and understand real computer components—like the motherboard, RAM, and hard drive—developing curiosity about how technology works from the inside out.'
   },
 ];
+
 
 
 interface VideoData {
@@ -111,11 +110,11 @@ const videosData: VideoData[] = [
 
 
 // Photo Card Component
-const PhotoCard = ({ photo, onImageClick } : {
+const PhotoCard = ({ photo, onImageClick }: {
   photo: PhotoData,
   onImageClick: (photo: PhotoData) => void
 }) => (
-  <div 
+  <div
     className="group bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:shadow-[#4F46E5]/20 transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer"
     onClick={() => onImageClick(photo)}
   >
@@ -128,14 +127,13 @@ const PhotoCard = ({ photo, onImageClick } : {
 );
 
 // Video Card Component
-const VideoCard = ({ video }: {video: VideoData}) => (
+const VideoCard = ({ video }: { video: VideoData }) => (
   <div className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:shadow-[#14B8A6]/20 transition-all duration-300 ease-in-out transform hover:-translate-y-2">
     <div className="aspect-w-16 aspect-h-9">
       <iframe
         className="w-full h-full"
         src={`https://www.youtube.com/embed/${video.youtubeId}`}
         title={video.title}
-        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -166,11 +164,11 @@ const Modal = ({ photo, onClose }: {
   }, [onClose]);
 
   return (
-    <div 
+    <div
       className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 p-4"
       onClick={onClose} // Close on backdrop click
     >
-      <div 
+      <div
         className="bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-full overflow-y-auto flex flex-col md:flex-row animate-fade-in-up"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
       >
@@ -184,16 +182,17 @@ const Modal = ({ photo, onClose }: {
               delay: 2500,
               disableOnInteraction: false,
             }}
-            pagination = {{ clickable: true }}
+            pagination={{ clickable: true }}
           >
             {photo.src.map((path) => {
               return (
-              <SwiperSlide key={path}>
-                <Image width={1000} height={0} src={path} alt="nothing" className='w-full h-full object-contain'/>
-              </SwiperSlide>
-              )})}
+                <SwiperSlide key={path}>
+                  <Image width={1000} height={0} src={path} alt="nothing" className='w-full h-full object-contain' />
+                </SwiperSlide>
+              )
+            })}
           </Swiper>
-          
+
           {/* TODO: Implement the maximize and minize */}
           {/* <img 
               src='./assets/icons/maximize.svg' 
@@ -218,7 +217,7 @@ const Modal = ({ photo, onClose }: {
       </div>
       <button
         onClick={onClose}
-        className="absolute top-4 right-4 text-white text-3xl hover:text-gray-300 transition-colors"
+        className="hidden md:block absolute top-4 right-4 text-white text-3xl hover:text-gray-300 transition-colors"
         aria-label="Close modal"
       >
         &times;
@@ -231,25 +230,24 @@ const Modal = ({ photo, onClose }: {
 export default function GalleryPage() {
   const [activeTab, setActiveTab] = useState('photos');
   const [selectedPhoto, setSelectedPhoto] = useState<PhotoData | null>(null);
-  
+
   const handleImageClick = (photo: PhotoData) => {
     setSelectedPhoto(photo);
   };
-  
+
   const handleCloseModal = () => {
     setSelectedPhoto(null);
   };
 
-  const TabButton = ({ tabName, label }: {tabName: string, label: string}) => {
+  const TabButton = ({ tabName, label }: { tabName: string, label: string }) => {
     const isActive = activeTab === tabName;
     return (
       <button
         onClick={() => setActiveTab(tabName)}
-        className={`px-6 py-3 text-lg font-semibold rounded-t-lg transition-all duration-300 relative focus:outline-none ${
-          isActive
+        className={`px-6 py-3 text-lg font-semibold rounded-t-lg transition-all duration-300 relative focus:outline-none ${isActive
             ? 'text-slate-900'
             : 'text-gray-500 hover:text-slate-900'
-        }`}
+          }`}
       >
         {label}
         {isActive && (
@@ -297,10 +295,10 @@ export default function GalleryPage() {
         </main>
       </div>
 
-      {selectedPhoto && 
+      {selectedPhoto &&
         <Modal photo={selectedPhoto} onClose={handleCloseModal} />
       }
-      
+
       {/* We need to define the animation classes used if they are not part of standard Tailwind */}
       <style>{`
         @keyframes fadeIn {

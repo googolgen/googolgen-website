@@ -94,8 +94,8 @@ export default class MultipleItems extends Component {
             //arrows: true,
             autoplay: false,
             speed: 1000,
-            nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
-            prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />,
+            nextArrow: <SampleNextArrow className='' style={undefined} onClick={undefined} />,
+            prevArrow: <SamplePrevArrow className='' style={undefined} onClick={undefined} />,
             autoplaySpeed: 4500,
             cssEase: "linear",
             responsive: [
@@ -123,7 +123,8 @@ export default class MultipleItems extends Component {
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: false
+                        dots: false,
+                        arrows: false
                     }
                 }
             ]
