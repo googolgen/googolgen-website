@@ -20,15 +20,14 @@ export interface Course {
 
 
 // ==================================================================
-// 1. COMPREHENSIVE COURSE DATA (Parsed from your PDF)
+// COMPREHENSIVE COURSE DATA
 // ==================================================================
-// This new data structure holds all syllabus details for the modal.
 export const courseDetailsData: Course[] = [
   {
     slug: "foundation-of-programming",
     title: "Foundation of Programming",
     description: "To introduce young learners (10-13) to computers, logical thinking, and coding fundamentals.",
-    imageUrl: "/assets/images/courses/foundation-programming.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/foundation-of-programming.png",
     targetGroup: "10-13 years old (Beginners)",
     duration: "6 Months",
     certificate: "Googolgen Education Foundation Certificate",
@@ -47,7 +46,7 @@ export const courseDetailsData: Course[] = [
     slug: "programming-for-problem-solving",
     title: "Programming for Problem Solving",
     description: "Develop computational thinking and problem-solving skills for intermediate learners (13-16).",
-    imageUrl: "/assets/images/courses/problem-solving.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/problem-solving.png",
     targetGroup: "13-16 years old (Intermediate Learners)",
     duration: "6 Months",
     certificate: "Googolgen Internal Certificate",
@@ -65,7 +64,7 @@ export const courseDetailsData: Course[] = [
     slug: "python-programming",
     title: "Python Programming",
     description: "Master Python programming fundamentals for students (age 15+) with basic programming knowledge.",
-    imageUrl: "/assets/images/courses/python-programming.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/python-programming.png", // REPLACE with your image
     targetGroup: "Students with basic programming knowledge (age 15+)",
     duration: "6 Months",
     certificate: "Googolgen Education Foundation Certificate",
@@ -84,7 +83,7 @@ export const courseDetailsData: Course[] = [
     slug: "web-design",
     title: "Web Design (HTML, CSS, JS)",
     description: "For school students (Class 8-12) to learn the fundamentals of modern web design.",
-    imageUrl: "/assets/images/courses/web-design.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/web-design.png", // REPLACE with your image
     targetGroup: "School Students (Class 8-12)",
     duration: "6 months",
     certificate: "Googolgen Education Foundation",
@@ -102,7 +101,7 @@ export const courseDetailsData: Course[] = [
     slug: "oop-java",
     title: "Object Oriented Programming using Java",
     description: "For students with prior programming knowledge to master Object-Oriented principles.",
-    imageUrl: "/assets/images/courses/oop-java.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/oop-with-java.png", // REPLACE with your image
     targetGroup: "Students with prior programming knowledge (C/Python preferred)",
     duration: "6 months",
     certificate: "Internal Certificate (Googolgen Education Foundation)",
@@ -121,7 +120,7 @@ export const courseDetailsData: Course[] = [
     slug: "python-ml-ds",
     title: "Python for ML & Data Science",
     description: "For students with basic computer knowledge to learn ML & Data Science from scratch.",
-    imageUrl: "/assets/images/courses/python-ml-ds.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/ml-ds.png",
     targetGroup: "Students who have basic computer knowledge (no need for prior Python experience)",
     duration: "6 months",
     certificate: "Internal Certificate (Googolgen Education Foundation)",
@@ -139,7 +138,7 @@ export const courseDetailsData: Course[] = [
     slug: "game-development-python",
     title: "Game Development using Python",
     description: "For students with basic to intermediate Python knowledge to build 2D games.",
-    imageUrl: "/assets/images/courses/game-development-python.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/game-development.png", // REPLACE with your image
     targetGroup: "Students with basic to intermediate Python knowledge",
     duration: "6-8 months",
     certificate: "Googolgen Education Foundation",
@@ -157,7 +156,7 @@ export const courseDetailsData: Course[] = [
     slug: "c-cpp-programming",
     title: "C & C++ Programming",
     description: "Strengthen programming fundamentals and logic building for aspiring developers.",
-    imageUrl: "/assets/images/courses/c-cpp-programming.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/c-and-cpp.png",
     targetGroup: "Students who want to strengthen programming fundamentals and logic building",
     duration: "6 Months",
     certificate: "Internal Certificate (Googolgen Education Foundation)",
@@ -175,7 +174,7 @@ export const courseDetailsData: Course[] = [
     slug: "android-app-development",
     title: "Android App Development",
     description: "For students with basic Java knowledge to build modern Android applications.",
-    imageUrl: "/assets/images/courses/android-app-development.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/android-app-development.png",
     targetGroup: "Students with basic knowledge of Java programming",
     duration: "6 Months",
     certificate: "Internal Certificate (Googolgen Education Foundation)",
@@ -193,7 +192,7 @@ export const courseDetailsData: Course[] = [
     slug: "generative-ai",
     title: "Generative AI",
     description: "Explore and build with Generative AI tools and APIs (Age 14+, Python recommended).",
-    imageUrl: "/assets/images/courses/generative-ai.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/generative-ai.png",
     targetGroup: "School Students (Age 14+, basic Python knowledge recommended)",
     duration: "6 Months",
     certificate: "Internal Certificate (Googolgen Education Foundation)",
@@ -211,7 +210,7 @@ export const courseDetailsData: Course[] = [
     slug: "frontend-development",
     title: "Frontend Development",
     description: "Learn HTML, CSS, JS, and modern frameworks like React and Tailwind (Age 14+).",
-    imageUrl: "/assets/images/courses/frontend-development.jpg", // REPLACE with your image
+    imageUrl: "/assets/courses/frontend-development.png",
     targetGroup: "School Students (Age 14+, basic computer knowledge)",
     duration: "6 Months",
     certificate: "Internal Certificate (Googolgen Education Foundation)",

@@ -166,12 +166,12 @@ const CoursesPage = () => {
                   `}
                 >
                   {/* Card Image */}
-                  <div className="relative w-full h-48">
+                  <div className="relative w-full h-48 border-b border-black">
                     <Image
                       src={course.imageUrl}
                       alt={course.title}
                       layout="fill"
-                      objectFit="cover"
+                      objectFit="contain"
                     />
                   </div>
 
