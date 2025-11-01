@@ -10,8 +10,7 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
   { name: 'Home', href: '/', current: true },
   { name: 'About Us', href: '/about-us', current: false },
-  { name: 'Programs', href: '/programs', current: false },
-  // { name: 'Why InspireIQ', href: '/why-inspireiq', current: false },
+  { name: 'Courses', href: '/courses', current: false },
   { name: 'Gallery', href: '/gallery', current: false },
   { name: 'Contact Us', href: '/contact-us', current: false },
 ];

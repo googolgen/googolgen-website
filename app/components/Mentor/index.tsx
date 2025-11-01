@@ -13,7 +13,7 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Founder, M.C.A (Jadavpur University)',
+        profession: 'Founder, (B.Sc IT, MCA, B.Ed)',
         name: 'Mr. M. K. Mandal',
         imgSrc: '/assets/mentor/mihir_kumar_mandal.jpeg',
     },
@@ -23,7 +23,7 @@ const postData: DataType[] = [
         imgSrc: '/assets/mentor/soumyarup_das.jpeg',
     },
     {
-        profession: 'AI & Python Expert (B.Tech, CSE Data Science)',
+        profession: 'AI & Python Expert (B.Tech, CSE Data Science, GATE CSIT Qualified)',
         name: 'Mr. Subinay Panda',
         imgSrc: '/assets/mentor/subinay_panda.webp',
     },
@@ -81,8 +81,6 @@ function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
         >PrevBtn</div>
     );
 }
-
-
 
 export default class MultipleItems extends Component {
 

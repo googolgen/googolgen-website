@@ -22,9 +22,7 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
   { name: 'Home', href: '/', current: true },
   { name: 'About Us', href: '/about-us', current: false },
-  { name: 'Programs', href: '/programs', current: false },
-  // { name: 'Why InspireIQ', href: '/why-inspireiq', current: false },
-  // { name: 'ATL Lab', href: '/atl-lab', current: false },
+  { name: 'Courses', href: '/courses', current: false },
   { name: 'Gallery', href: '/gallery', current: false },
   { name: 'Contact Us', href: '/contact-us', current: false },
 ];
@@ -82,14 +80,6 @@ const Navbar = () => {
                   height={96}
                 />
                 <div className='flex flex-col items-center gap-2 ml-6 md:ml-4'>
-                  {/* <Image
-                    id="hello"
-                    className="block w-32"
-                    src={'/assets/logo/logo-text.png'}
-                    alt="dsign-logo"
-                    width={128}
-                    height={0}
-                  /> */}
                   <span className='text-3xl font-bold text-Blueviolet'>Googolgen</span>
                 </div>
               </div>

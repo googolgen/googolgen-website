@@ -4,7 +4,10 @@ import Image from "next/image";
 interface ProductType {
     id: number;
     section: string;
-    link: string[];
+    link: {
+        label: string;
+        url: string;
+    }[];
 }
 
 interface socialLinks {
@@ -30,18 +33,36 @@ const products: ProductType[] = [
     {
         id: 1,
         section: "Company",
-        link: ['About', 'Careers', 'Mobile', 'Blog', 'How we work?'],
+        link: [ 
+            {label: 'About Us', url: '/about-us'},
+            {label: 'Testimonials', url: '/#testimonials'},
+            {label: 'Courses', url: '/courses'},
+            {label: 'Gallery', url: '/gallery'},
+            {label: 'Blog', url: '/blog'}
+        ],
     },
     {
         id: 2,
         section: "Contact",
-        link: ['Help/FAQ', 'Press', 'Affiliates', 'Hotel owners', 'Partners']
+        link: [
+            {label: 'Help/FAQ', url: ''},
+            {label: 'Press', url: ''},
+            {label: 'Affiliates', url: ''},
+            {label: 'Hotel owners', url: ''},
+            {label: 'Partners', url: ''},
+        ]
     }
     ,
     {
         id: 3,
         section: "More",
-        link: ['Airline fees', 'Airlines', 'Low fare tips', 'Badges &', 'Certificates']
+        link: [
+            {label: 'Airline fees', url: ''},
+            {label: 'Airlines', url: ''},
+            {label: 'Low fare tips', url: ''},
+            {label: 'Badges &', url: ''},
+            {label: 'Certificates', url: ''}
+        ]
     }
 ]
 
@@ -77,9 +98,9 @@ const footer = () => {
                     <div key={product.id} className="sm:col-span-2">
                         <p className="text-black text-lg font-medium mb-9">{product.section}</p>
                         <ul>
-                            {product.link.map((link: string, index: number) => (
+                            {product.link.map((link: {label: string, url: string}, index: number) => (
                                 <li key={index} className='mb-5'>
-                                    <Link href="/" className="text-darkgray text-base font-normal mb-6 space-links">{link}</Link>
+                                    <Link href={link.url} className="text-darkgray text-base font-normal mb-6 space-links">{link.label}</Link>
                                 </li>
                             ))}
                         </ul>
